@@ -1,6 +1,4 @@
 body {
-    /*background: url("../images/background_main_photo.jpg") no-repeat fixed center center;*/
-    /*background-color: rgba(255, 255, 255, 0.3);*/
 
     background: url("../images/background_main_photo.jpg") no-repeat fixed center center;
     background-color: rgba(74, 81, 89, 0.5) !important;
@@ -9,18 +7,17 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
 }
 .img-overlay {
 
     margin:0;
     top:0;
     left:0;
-    /*//padding-bottom: ;*/
     width: 100%;
-    /*background: rgba(49, 57, 65, 0.19);*/
+   height: 100%;
 }
 .logo{
     padding: 5%;
     text-align: center;
-
 }

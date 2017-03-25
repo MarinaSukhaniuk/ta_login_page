@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Bootstrap Example</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style/css/my.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -54,18 +54,23 @@
     }
 
     .image-icon {
-        width: 25px;
-        height: 25px;
+        max-width: 65%;
+        height: auto;
+        width: auto;
+
+
     }
 
     .image-icon-mail {
-        width: 25px;
-        height: 18px;
+        max-width: 70%;
+        height: auto;
+        width: auto;
     }
 
     .form-control-feedback {
         top: 5px;
         left: 30px;
+        bottom: 5px;
     }
 
     .form-control {
@@ -151,8 +156,9 @@
     #login-row {
         margin: 0 auto;
     }
-    #left-logo{
-        background-color:  rgba(255, 255, 255, 0.3);
+
+    #left-logo {
+        background-color: rgba(255, 255, 255, 0.3);
     }
 </style>
 <div class="container">
@@ -186,19 +192,19 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <form>
                         <div class="form-group">
-                            <div class="col-sm-12">
-                                    <span class="glyphicon form-control-feedback"><img class="image-icon"
-                                                                                       src="style/images/user.png"></span>
+                            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                                    <span class="glyphicon form-control-feedback">
+                                        <img class="image-icon" src="style/images/user.png"></span>
                                 <input type="text" class="form-control" placeholder="Name">
                             </div>
-                            <div class="col-sm-12">
-                                    <span class="glyphicon form-control-feedback"><img class="image-icon"
-                                                                                       src="style/images/user.png"></span>
+                            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                                    <span class="glyphicon form-control-feedback">
+                                        <img class="image-icon" src="style/images/user.png"></span>
                                 <input type="text" class="form-control" placeholder="Surname">
                             </div>
-                            <div class="col-sm-12">
-                                    <span class="glyphicon form-control-feedback"><img class="image-icon-mail"
-                                                                                       src="style/images/mail.png"></span>
+                            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                                    <span class="glyphicon form-control-feedback">
+                                        <img class="image-icon-mail" src="style/images/mail.png"></span>
                                 <input type="text" class="form-control" placeholder="Email">
                             </div>
                             <div class="col-sm-12 checkbox ">
