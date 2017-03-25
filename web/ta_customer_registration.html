@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style/css/my.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="style/css/bootstrap-grid.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="style/css/bootstrap.css">-->
+    <link href="style/css/switcher.css" rel="stylesheet">
+
+</head>
+<body>
+<style>
+    @font-face {
+        font-family: "Roboto Lt";
+        src: url("style/fonts/Roboto Light.ttf");
+    }
+
+    @font-face {
+        font-family: "Century Gothic";
+        src: url("style/fonts/GOTHIC.TTF")
+    }
+
+    .col {
+        background-color: red;
+        height: 500px;
+    }
+
+    .large-text {
+        font: 36pt Century Gothic;
+    }
+
+    .vertical-center {
+        display: flex;
+        align-items: center;
+        font: 11pt Roboto Lt;
+    }
+
+    .vertical-center-margin {
+        margin-top: 5px;
+        margin-right: -10px;
+
+    }
+    .col-lg-5 {
+        background-color: white;
+    }
+    .header-text{
+        font: 16pt Roboto Lt;
+    }
+</style>
+<div class="img-overlay">
+    <div class="container">
+        <div class="logo">
+            <img src="style/images/taxadv%20logo.png" alt="HTML5 Icon">
+        </div>
+        <div class="row justify-content-md-center">
+
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class="col col-lg-4 col-md-4 col-xl-4 col-sm-12 text-center vertical-center hidden-xs">
+                <p class="large-text">CUSTOMER LOGIN</p>
+            </div>
+
+            <div class="col col-lg-5 col-md-4 col-xl-4 col-sm-4 ">
+                <!--switcher-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="pull-right vertical-center vertical-center-margin">
+                            Log in
+                            <label class="switch switch-margin">
+                                <!--add attribute "checked" to set it on-->
+                                <input type="checkbox">
+                                <div class="slider round"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <!--end switcher-->
+                    <div class="col-lg-12 text-center">
+                        <h4 class="header-text">New member registration</h4>
+                    </div>
+                    <div class="col-lg-12">
+                        <form>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                            </div>
+                            <br>
+
+                        </form>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
