@@ -27,7 +27,7 @@
     }
 
     .col {
-        background-color: red;
+        background-color: white;
         height: 500px;
     }
 
@@ -51,6 +51,14 @@
     }
     .header-text{
         font: 16pt Roboto Lt;
+    }
+    .form-control-noshadow{
+        -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,.075);
+         box-shadow: inset 0 0 0 rgba(0,0,0,.075);
+        border-left: 0;
+    }
+    .input-group-addon{
+        background-color: white;
     }
 </style>
 <div class="img-overlay">
@@ -85,13 +93,13 @@
                     <div class="col-lg-12">
                         <form>
                             <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                <span class="input-group-addon"> <img src="style/images/user.png" style="width: 20px; height: 20px;"></span>
+                                <input id="email" type="text" class="form-control form-control-noshadow" name="email" placeholder="Email">
                             </div>
                             <br>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                <input id="surname" type="text" class="form-control form-control-noshadow" name="password" placeholder="Password">
                             </div>
                             <br>
 
