@@ -7,6 +7,7 @@
 .switch-margin{
     margin-left: 7px;
     margin-top: 7px;
+    margin-right: 15px;
 }
 
 .switch input {display:none;}

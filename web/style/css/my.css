@@ -59,6 +59,7 @@ body {
 
 .header-text {
     font: 16pt Roboto Lt;
+    text-align: center;
 }
 
 .image-icon {
@@ -150,6 +151,8 @@ body {
     width: 100%;
     color: #999999;
     margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .btn-max-width img {
