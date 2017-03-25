@@ -26,6 +26,11 @@
         src: url("style/fonts/GOTHIC.TTF")
     }
 
+    @font-face {
+        font-family: "Roboto M";
+        src: url("style/fonts/Roboto Medium.ttf")
+    }
+
     .col {
         background-color: white;
         height: 500px;
@@ -46,17 +51,62 @@
         margin-right: -10px;
 
     }
-    .header-text{
+
+    .header-text {
         font: 16pt Roboto Lt;
     }
-    .form-control-noshadow{
-        -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,.075);
-         box-shadow: inset 0 0 0 rgba(0,0,0,.075);
-        border-left: 0;
+
+    .image-icon {
+        width: 25px;
+        height: 25px;
     }
-    .input-group-addon{
-        background-color: white;
+
+    .image-icon-mail {
+        width: 25px;
+        height: 18px;
     }
+
+    .form-control-feedback {
+        top: 5px;
+        left: 30px;
+    }
+
+    .form-control {
+        padding-left: 45px;
+        margin: 8px;
+    }
+
+    .checkbox {
+        margin-left: 10px;
+    }
+
+    .btn-orange {
+        background-color: #cc6633;
+        color: white;
+        font: 10pt Roboto M;
+        border-radius: 40px;
+        margin: 5px;
+        box-shadow: 3px 3px 7px 0 rgba(215, 100, 71, 0.49);
+    }
+
+    .btn-orange:hover {
+        color: white;
+    }
+
+    .hr-text-center {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #000;
+        line-height: 0.1em;
+        margin: 200px 0 20px;
+    }
+
+    .hr-text-center span {
+        background: #fff;
+        padding: 0 10px;
+    }
+
+
 </style>
 <div class="img-overlay">
     <div class="container">
@@ -89,19 +139,39 @@
                     </div>
                     <div class="col-lg-12">
                         <form>
-                            <div class="input-group">
-                                <span class="input-group-addon"> <img src="style/images/user.png" style="width: 20px; height: 20px;"></span>
-                                <input id="email" type="text" class="form-control form-control-noshadow" name="name" placeholder="Name">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <span class="glyphicon form-control-feedback"><img class="image-icon"
+                                                                                       src="style/images/user.png"></span>
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-sm-12">
+                                    <span class="glyphicon form-control-feedback"><img class="image-icon"
+                                                                                       src="style/images/user.png"></span>
+                                    <input type="text" class="form-control" placeholder="Surname">
+                                </div>
+                                <div class="col-sm-12">
+                                    <span class="glyphicon form-control-feedback"><img class="image-icon-mail"
+                                                                                       src="style/images/mail.png"></span>
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-sm-12 checkbox ">
+                                    <label><input type="checkbox" value="">I agree to the <a href="#">terms</a> </label>
+                                </div>
+                                <div class="col-sm-12 text-center">
+                                    <a href="#" class="btn btn-orange">REGISTER</a>
+                                </div>
                             </div>
-                            <br>
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                <input id="surname" type="text" class="form-control form-control-noshadow" name="password" placeholder="Password">
-                            </div>
-                            <br>
-
                         </form>
                         <br>
+
+                            <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
+                              <span style="font-size: 40px; background-color: #F3F5F6; padding: 0 10px;">
+                                Section Title <!--Padding is optional-->
+                              </span>
+                            </div>
+
+
                     </div>
                 </div>
             </div>
