@@ -58,7 +58,6 @@
         height: auto;
         width: auto;
 
-
     }
 
     .image-icon-mail {
@@ -161,100 +160,120 @@
         background-color: rgba(255, 255, 255, 0.3);
     }
 </style>
-<div class="container">
-    <div class="logo">
-        <img src="style/images/taxadv%20logo.png" alt="HTML5 Icon">
-    </div>
-    <div class="row justify-content-md-center" id="login-row">
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <div class="col col-lg-offset-2 col-lg-3 col-md-offset-1 col-md-4 col-xl-4 col-sm-12 text-center vertical-center hidden-sm hidden-xs"
-             id="left-logo">
-            <p class="large-text">CUSTOMER <br> LOGIN</p>
+<div class="container vertical-center-block">
+    <div class="wrapper">
+        <div class="logo" id="logo">
+            <img src="style/images/taxadv%20logo.png" alt="HTML5 Icon">
         </div>
+        <div class="row justify-content-md-center" id="login-row">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class="col col-lg-offset-2 col-lg-3 col-md-offset-1 col-md-4 col-xl-4 col-sm-12 text-center vertical-center hidden-sm hidden-xs"
+                 id="left-logo">
+                <p class="large-text">CUSTOMER <br> LOGIN</p>
+            </div>
 
-        <div class="col col-lg-5 col-md-6 col-xl-6 col-sm-12">
-            <!--switcher-->
-            <div class="row ">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="min-height: 24px;">
-                    <div class="pull-right vertical-center vertical-center-margin">
-                        Log in
-                        <label class="switch switch-margin">
-                            <!--add attribute "checked" to set it on-->
-                            <input type="checkbox">
-                            <div class="slider round"></div>
-                        </label>
+            <div class="col col-lg-5 col-md-6 col-xl-6 col-sm-12">
+                <!--switcher-->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="min-height: 24px;">
+                        <div class="pull-right vertical-center vertical-center-margin">
+                            Log in
+                            <label class="switch switch-margin">
+                                <!--add attribute "checked" to set it on-->
+                                <input type="checkbox">
+                                <div class="slider round"></div>
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <!--end switcher-->
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
-                    <h4 class="header-text">New member registration</h4>
-                </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <form>
-                        <div class="form-group">
-                            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                    <!--end switcher-->
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                        <h4 class="header-text">New member registration</h4>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <form>
+                            <div class="form-group">
+                                <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
                                     <span class="glyphicon form-control-feedback">
                                         <img class="image-icon" src="style/images/user.png"></span>
-                                <input type="text" class="form-control" placeholder="Name">
-                            </div>
-                            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
                                     <span class="glyphicon form-control-feedback">
                                         <img class="image-icon" src="style/images/user.png"></span>
-                                <input type="text" class="form-control" placeholder="Surname">
-                            </div>
-                            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                                    <input type="text" class="form-control" placeholder="Surname">
+                                </div>
+                                <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
                                     <span class="glyphicon form-control-feedback">
                                         <img class="image-icon-mail" src="style/images/mail.png"></span>
-                                <input type="text" class="form-control" placeholder="Email">
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-sm-12 checkbox ">
+                                    <label><input type="checkbox" value="">I agree to the <a href="#">terms</a> </label>
+                                </div>
+                                <div class="col-sm-12 text-center">
+                                    <a href="#" class="btn btn-orange">REGISTER</a>
+                                </div>
                             </div>
-                            <div class="col-sm-12 checkbox ">
-                                <label><input type="checkbox" value="">I agree to the <a href="#">terms</a> </label>
-                            </div>
-                            <div class="col-sm-12 text-center">
-                                <a href="#" class="btn btn-orange">REGISTER</a>
+                        </form>
+                        <br>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="strike">
+                                <span>or sign in with 1-click</span>
                             </div>
                         </div>
-                    </form>
-                    <br>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="strike">
-                            <span>or sign in with 1-click</span>
-                        </div>
-                    </div>
-                    <!--SOCIAL NETWORKS LINK-->
-                    <div class="row social-networks">
+                        <!--SOCIAL NETWORKS LINK-->
+                        <div class="row social-networks">
 
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <a href="#" class="btn btn-default btn-max-width">
-                                <img src="style/images/social_fb.png">Facebook
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <a href="#" class="btn btn-default btn-max-width">
-                                <img src="style/images/social_ln.png">Linkedin
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <a href="#" class="btn btn-default btn-max-width">
-                                <img src="style/images/social_tw.png">Twitter
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <a href="#" class="btn btn-default btn-max-width">
-                                <img src="style/images/social_google.png">Google Plus
-                            </a>
-                        </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a href="#" class="btn btn-default btn-max-width">
+                                    <img src="style/images/social_fb.png">Facebook
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a href="#" class="btn btn-default btn-max-width">
+                                    <img src="style/images/social_ln.png">Linkedin
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a href="#" class="btn btn-default btn-max-width">
+                                    <img src="style/images/social_tw.png">Twitter
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a href="#" class="btn btn-default btn-max-width">
+                                    <img src="style/images/social_google.png">Google Plus
+                                </a>
+                            </div>
 
+                        </div>
+                        <!--END SOCIAL NETWORKS LINK-->
                     </div>
-                    <!--END SOCIAL NETWORKS LINK-->
                 </div>
             </div>
         </div>
     </div>
 </div>
 <script>
-    $(document).ready(function () {
+
+    window.onresize = function(event) {
+
         document.getElementById("left-logo").style.height = document.getElementById("login-row").offsetHeight + "px";
+        var screenHeight = $(document).height();
+        var loginHeight = document.getElementById("login-row").offsetHeight;
+        var logoHeight = document.getElementById("logo").offsetHeight;
+        document.getElementById("login-row").style.marginTop = (screenHeight - loginHeight - logoHeight)/2 + "px";
+        document.getElementById("login-row").style.marginBottom = (screenHeight - loginHeight)/2 + "px";
+    };
+    $(document).ready(function () {
+
+
+        document.getElementById("left-logo").style.height = document.getElementById("login-row").offsetHeight + "px";
+        var screenHeight = $(document).height();
+        var loginHeight = document.getElementById("login-row").offsetHeight;
+        var logoHeight = document.getElementById("logo").offsetHeight;
+        document.getElementById("login-row").style.marginTop = (screenHeight - loginHeight - logoHeight)/2 + "px";
+        document.getElementById("login-row").style.marginBottom = (screenHeight - loginHeight)/2 + "px";
+
     });
 </script>
 </body>
