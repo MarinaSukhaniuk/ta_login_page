@@ -31,10 +31,12 @@
     .col {
         background-color: white;
         /*height: 500px;*/
+
     }
 
     .large-text {
         font: 36pt Century Gothic;
+        width: 100%;
     }
 
     .vertical-center {
@@ -158,9 +160,9 @@
     </div>
     <div class="row justify-content-md-center" id="login-row">
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <div class="col col-lg-offset-2 col-lg-4 col-md-6 col-xl-6 col-sm-12 text-center vertical-center"
+        <div class="col col-lg-offset-2 col-lg-4 col-md-6 col-xl-6 col-sm-12 text-center vertical-center hidden-sm hidden-col"
              id="left-logo">
-            <p class="large-text">CUSTOMER LOGIN</p>
+            <p class="large-text">CUSTOMER <br> LOGIN</p>
         </div>
 
         <div class="col col-lg-4 col-md-6 col-xl-6 col-sm-12">
@@ -245,7 +247,7 @@
 </div>
 <script>
     $(document).ready(function () {
-        document.getElementById("left-logo").style.height = document.getElementById("login-row").offsetHeight + "px";
+        document.getElementById("left-logo").style.height = document.getElementById("login-row").offsetHeight +0.5+ "px";
     });
 </script>
 </body>

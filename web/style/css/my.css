@@ -7,13 +7,13 @@ body {
     background-size: cover;
 }
 .img-overlay {
-    position: fixed;
+
     margin:0;
     top:0;
     left:0;
-    padding-bottom: 100%;
+    /*//padding-bottom: ;*/
     width: 100%;
-    background: rgba(49, 57, 65, 0.19);
+    /*background: rgba(49, 57, 65, 0.19);*/
 }
 .logo{
     padding: 5%;
