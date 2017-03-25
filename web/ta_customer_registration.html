@@ -143,103 +143,110 @@
         height: 20px;
 
     }
-    .social-networks{
+
+    .social-networks {
         margin-bottom: 25px;
     }
 
+    #login-row {
+        margin-bottom: 50px;
+    }
 </style>
-<div class="img-overlay">
-    <div class="container">
-        <div class="logo">
-            <img src="style/images/taxadv%20logo.png" alt="HTML5 Icon">
+<div class="container">
+    <div class="logo">
+        <img src="style/images/taxadv%20logo.png" alt="HTML5 Icon">
+    </div>
+    <div class="row justify-content-md-center" id="login-row">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="col col-lg-offset-2 col-lg-4 col-md-6 col-xl-6 col-sm-12 text-center vertical-center"
+             id="left-logo">
+            <p class="large-text">CUSTOMER LOGIN</p>
         </div>
-        <div class="row  justify-content-md-center ">
 
-            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-            <div class="col col-lg-offset-2 col-lg-4 col-md-6 col-xl-6 col-sm-12 text-center vertical-center hidden-xs hidden-sm">
-                <p class="large-text">CUSTOMER LOGIN</p>
-            </div>
-
-            <div class="col col-lg-4 col-md-6 col-xl-6 col-sm-12">
-                <!--switcher-->
-                <div class="row ">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="min-height: 24px;">
-                        <div class="pull-right vertical-center vertical-center-margin">
-                            Log in
-                            <label class="switch switch-margin">
-                                <!--add attribute "checked" to set it on-->
-                                <input type="checkbox">
-                                <div class="slider round"></div>
-                            </label>
-                        </div>
+        <div class="col col-lg-4 col-md-6 col-xl-6 col-sm-12">
+            <!--switcher-->
+            <div class="row ">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="min-height: 24px;">
+                    <div class="pull-right vertical-center vertical-center-margin">
+                        Log in
+                        <label class="switch switch-margin">
+                            <!--add attribute "checked" to set it on-->
+                            <input type="checkbox">
+                            <div class="slider round"></div>
+                        </label>
                     </div>
-                    <!--end switcher-->
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
-                        <h4 class="header-text">New member registration</h4>
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <form>
-                            <div class="form-group">
-                                <div class="col-sm-12">
+                </div>
+                <!--end switcher-->
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                    <h4 class="header-text">New member registration</h4>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <form>
+                        <div class="form-group">
+                            <div class="col-sm-12">
                                     <span class="glyphicon form-control-feedback"><img class="image-icon"
                                                                                        src="style/images/user.png"></span>
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                                <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col-sm-12">
                                     <span class="glyphicon form-control-feedback"><img class="image-icon"
                                                                                        src="style/images/user.png"></span>
-                                    <input type="text" class="form-control" placeholder="Surname">
-                                </div>
-                                <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="Surname">
+                            </div>
+                            <div class="col-sm-12">
                                     <span class="glyphicon form-control-feedback"><img class="image-icon-mail"
                                                                                        src="style/images/mail.png"></span>
-                                    <input type="text" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="col-sm-12 checkbox ">
-                                    <label><input type="checkbox" value="">I agree to the <a href="#">terms</a> </label>
-                                </div>
-                                <div class="col-sm-12 text-center">
-                                    <a href="#" class="btn btn-orange">REGISTER</a>
-                                </div>
+                                <input type="text" class="form-control" placeholder="Email">
                             </div>
-                        </form>
-                        <br>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <div class="strike">
-                                <span>or sign in with 1-click</span>
+                            <div class="col-sm-12 checkbox ">
+                                <label><input type="checkbox" value="">I agree to the <a href="#">terms</a> </label>
+                            </div>
+                            <div class="col-sm-12 text-center">
+                                <a href="#" class="btn btn-orange">REGISTER</a>
                             </div>
                         </div>
-                        <!--SOCIAL NETWORKS LINK-->
-                        <div class="row social-networks">
-
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <a href="#" class="btn btn-default btn-max-width">
-                                    <img src="style/images/social_fb.png">Facebook
-                                </a>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <a href="#" class="btn btn-default btn-max-width">
-                                    <img src="style/images/social_ln.png">Linkedin
-                                </a>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <a href="#" class="btn btn-default btn-max-width">
-                                    <img src="style/images/social_tw.png">Twitter
-                                </a>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <a href="#" class="btn btn-default btn-max-width">
-                                    <img src="style/images/social_google.png">Google Plus
-                                </a>
-                            </div>
-
+                    </form>
+                    <br>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="strike">
+                            <span>or sign in with 1-click</span>
                         </div>
-                        <!--END SOCIAL NETWORKS LINK-->
                     </div>
+                    <!--SOCIAL NETWORKS LINK-->
+                    <div class="row social-networks">
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <a href="#" class="btn btn-default btn-max-width">
+                                <img src="style/images/social_fb.png">Facebook
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <a href="#" class="btn btn-default btn-max-width">
+                                <img src="style/images/social_ln.png">Linkedin
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <a href="#" class="btn btn-default btn-max-width">
+                                <img src="style/images/social_tw.png">Twitter
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <a href="#" class="btn btn-default btn-max-width">
+                                <img src="style/images/social_google.png">Google Plus
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--END SOCIAL NETWORKS LINK-->
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+        document.getElementById("left-logo").style.height = document.getElementById("login-row").offsetHeight + "px";
+    });
+</script>
 </body>
 </html>
