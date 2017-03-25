@@ -266,8 +266,12 @@
         var screenHeight = $(window).height();
         var loginHeight = document.getElementById("login-row").offsetHeight;
         var logoHeight = document.getElementById("logo").offsetHeight;
-        document.getElementById("login-row").style.marginTop = (screenHeight - loginHeight) / 2 - logoHeight + "px";
-        document.getElementById("login-row").style.marginBottom = (screenHeight - loginHeight) / 2 + "px";
+        if ((screenHeight - loginHeight) / 2 > logoHeight) {
+            document.getElementById("login-row").style.marginTop = Math.abs((screenHeight - loginHeight) / 2) - logoHeight + "px";
+        } else {
+            document.getElementById("login-row").style.marginTop = Math.abs((screenHeight - loginHeight) / 2) + "px";
+        }
+        document.getElementById("login-row").style.marginBottom = Math.abs((screenHeight - loginHeight) / 2) + "px";
     }
 </script>
 </body>
