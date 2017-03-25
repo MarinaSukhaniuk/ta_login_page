@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--<link rel="stylesheet" type="text/css" href="style/css/bootstrap-grid.min.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="style/css/bootstrap.css">-->
     <link href="style/css/switcher.css" rel="stylesheet">
-
 </head>
 <body>
 <style>
@@ -106,6 +103,37 @@
         padding: 0 10px;
     }
 
+    .strike {
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .strike > span {
+        position: relative;
+        display: inline-block;
+    }
+
+    .strike > span:before,
+    .strike > span:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        height: 1px;
+        background: red;
+    }
+
+    .strike > span:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+
+    .strike > span:after {
+        left: 100%;
+        margin-left: 15px;
+    }
 
 </style>
 <div class="img-overlay">
@@ -164,14 +192,11 @@
                             </div>
                         </form>
                         <br>
-
-                            <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
-                              <span style="font-size: 40px; background-color: #F3F5F6; padding: 0 10px;">
-                                Section Title <!--Padding is optional-->
-                              </span>
+                        <div class="col-lg-12">
+                            <div class="strike">
+                                <span>Kringle</span>
                             </div>
-
-
+                        </div>
                     </div>
                 </div>
             </div>
