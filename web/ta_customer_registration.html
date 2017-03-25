@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <title>Bootstrap Example</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" type="text/css" href="style/css/my.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -30,13 +29,12 @@
 
     .col {
         background-color: white;
-        /*height: 500px;*/
-
     }
 
     .large-text {
         font: 36pt Century Gothic;
         width: 100%;
+        color: white;
     }
 
     .vertical-center {
@@ -151,7 +149,10 @@
     }
 
     #login-row {
-        margin-bottom: 50px;
+        margin: 0 auto;
+    }
+    #left-logo{
+        background-color:  rgba(255, 255, 255, 0.3);
     }
 </style>
 <div class="container">
@@ -160,12 +161,12 @@
     </div>
     <div class="row justify-content-md-center" id="login-row">
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <div class="col col-lg-offset-2 col-lg-4 col-md-6 col-xl-6 col-sm-12 text-center vertical-center hidden-sm hidden-col"
+        <div class="col col-lg-offset-2 col-lg-3 col-md-offset-1 col-md-4 col-xl-4 col-sm-12 text-center vertical-center hidden-sm hidden-xs"
              id="left-logo">
             <p class="large-text">CUSTOMER <br> LOGIN</p>
         </div>
 
-        <div class="col col-lg-4 col-md-6 col-xl-6 col-sm-12">
+        <div class="col col-lg-5 col-md-6 col-xl-6 col-sm-12">
             <!--switcher-->
             <div class="row ">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="min-height: 24px;">
@@ -247,7 +248,7 @@
 </div>
 <script>
     $(document).ready(function () {
-        document.getElementById("left-logo").style.height = document.getElementById("login-row").offsetHeight +0.5+ "px";
+        document.getElementById("left-logo").style.height = document.getElementById("login-row").offsetHeight + "px";
     });
 </script>
 </body>

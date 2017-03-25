@@ -1,5 +1,9 @@
 body {
-    background:rgba(49, 57, 65, 0.19) url("../images/background_main_photo.jpg") no-repeat center center fixed ;
+    /*background: url("../images/background_main_photo.jpg") no-repeat fixed center center;*/
+    /*background-color: rgba(255, 255, 255, 0.3);*/
+
+    background: url("../images/background_main_photo.jpg") no-repeat fixed center center;
+    background-color: rgba(74, 81, 89, 0.5) !important;
     background-blend-mode: darken;
     -webkit-background-size: cover;
     -moz-background-size: cover;
