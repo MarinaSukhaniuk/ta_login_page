@@ -111,21 +111,17 @@
     </div>
 </div>
 <script>
-    $(document).ready(function(){
-        $('#terms-checkbox').iCheck({
-            checkboxClass: 'icheckbox_square-blue',
-            radioClass: 'iradio_square',
-            increaseArea: '10%' // optional
-        });
-    });
-</script>
-<script>
     window.onresize = function () {
         redrawOnResize();
     };
     $(document).ready(function () {
         redrawOnResize();
-
+        //set terms checkbox style
+        $('#terms-checkbox').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square',
+            increaseArea: '10%' // optional
+        });
     });
     /**
      * This function set margin to login block to center of screen
