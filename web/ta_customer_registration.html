@@ -260,7 +260,9 @@
     $(document).ready(function () {
         redrawOnResize();
     });
-
+    /**
+     * This function set margin to login block to center of screen
+     */
     function redrawOnResize() {
         document.getElementById("left-logo").style.height = document.getElementById("login-row").offsetHeight + "px";
         var screenHeight = $(window).height();
