@@ -8,14 +8,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="style/css/switcher.css" rel="stylesheet">
-    <link href="style/icheck-1.x/skins/square/red.css" rel="stylesheet">
-    <script src="style/icheck-1.x/icheck.js"></script>
     <link rel="stylesheet" type="text/css" href="style/css/my.css">
+
+
+    <link href="style/frameworks/icheck/skins/all.css" rel="stylesheet">
+    <script src="style/frameworks/icheck/icheck.js"></script>
+
 </head>
 <body>
-<style>
-
-</style>
 <div class="container vertical-center-block">
     <div class="wrapper">
         <div class="logo" id="logo">
@@ -65,7 +65,7 @@
                                 </div>
                                 <!--CHECKBOX-->
                                 <div class="col-sm-12 checkbox ">
-                                    <label><input type="checkbox" class="input-check" id="input-check" value="">I agree to the <a href="#">terms</a> </label>
+                                    <label><input type="checkbox" id="terms-checkbox" value="">I agree to the <a href="#">terms</a> </label>
                                 </div>
                                 <div class="col-sm-12 text-center">
                                     <a href="#" class="btn btn-orange">REGISTER</a>
@@ -112,7 +112,11 @@
 </div>
 <script>
     $(document).ready(function(){
-        $('#input-check').iCheck('check');
+        $('#terms-checkbox').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square',
+            increaseArea: '10%' // optional
+        });
     });
 </script>
 <script>
