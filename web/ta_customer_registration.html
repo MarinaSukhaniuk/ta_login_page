@@ -8,6 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="style/css/switcher.css" rel="stylesheet">
+    <link href="style/icheck-1.x/skins/square/red.css" rel="stylesheet">
+    <script src="style/icheck-1.x/icheck.js"></script>
     <link rel="stylesheet" type="text/css" href="style/css/my.css">
 </head>
 <body>
@@ -61,8 +63,9 @@
                                         <img class="image-icon-mail" src="style/images/mail.png"></span>
                                     <input type="text" class="form-control" placeholder="Email">
                                 </div>
+                                <!--CHECKBOX-->
                                 <div class="col-sm-12 checkbox ">
-                                    <label><input type="checkbox" value="">I agree to the <a href="#">terms</a> </label>
+                                    <label><input type="checkbox" class="input-check" id="input-check" value="">I agree to the <a href="#">terms</a> </label>
                                 </div>
                                 <div class="col-sm-12 text-center">
                                     <a href="#" class="btn btn-orange">REGISTER</a>
@@ -108,11 +111,17 @@
     </div>
 </div>
 <script>
+    $(document).ready(function(){
+        $('#input-check').iCheck('check');
+    });
+</script>
+<script>
     window.onresize = function () {
         redrawOnResize();
     };
     $(document).ready(function () {
         redrawOnResize();
+
     });
     /**
      * This function set margin to login block to center of screen
