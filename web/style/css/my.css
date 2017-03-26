@@ -50,6 +50,9 @@ body {
     align-items: center;
     font: 11pt Roboto Lt;
 }
+.vertical-center a{
+    color: #76b6e9;
+}
 
 .vertical-center-margin {
     margin-top: 5px;
@@ -89,7 +92,10 @@ body {
 .checkbox {
     margin-left: 10px;
 }
-
+.checkbox-text{
+    margin-left: 35px;
+    margin-top: -20px;
+}
 .btn-orange {
     background-color: #f26036;
     color: white;
@@ -178,5 +184,5 @@ body {
     margin-left: -10px;
 }
 .checkbox label{
-    margin-right: 7px;
+    margin-right: 10px;
 }

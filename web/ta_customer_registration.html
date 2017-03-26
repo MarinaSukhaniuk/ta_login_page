@@ -64,9 +64,9 @@
                                     <input type="text" class="form-control" placeholder="Email">
                                 </div>
                                 <!--CHECKBOX-->
-                                <div class="col-sm-12 checkbox ">
-                                    <label><input type="checkbox" id="terms-checkbox" value="">
-                                        I agree to the <a href="#">terms</a> </label>
+                                <div class="col-sm-12 checkbox checkbox-margin vertical-center">
+                                    <label><input type="checkbox" class="checkbox-margin" id="terms-checkbox" value="">
+                                         I agree to the <a href="#">terms</a> </label>
                                 </div>
                                 <div class="col-sm-12 text-center">
                                     <a href="#" class="btn btn-orange">REGISTER</a>
@@ -119,7 +119,7 @@
         redrawOnResize();
         //set terms checkbox style
         $('#terms-checkbox').iCheck({
-            checkboxClass: 'icheckbox_flat-blue',
+            checkboxClass: 'icheckbox_flat-custom',
             radioClass: 'iradio_square',
             increaseArea: '10%' // optional
         });
@@ -135,7 +135,7 @@
         if ((screenHeight - loginHeight) / 2 > logoHeight) {
             document.getElementById("login-row").style.marginTop = Math.abs((screenHeight) / 2 - (loginHeight / 2)) - logoHeight + "px";
         }
-        document.getElementById("login-row").style.marginBottom = Math.abs((screenHeight) / 2 - (loginHeight / 2)) + "px";
+        document.getElementById("login-row").style.marginBottom = Math.abs((screenHeight) / 2 - (loginHeight / 2))  +"px";
     }
 </script>
 </body>
