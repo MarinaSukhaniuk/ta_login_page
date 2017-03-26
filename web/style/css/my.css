@@ -87,6 +87,7 @@ body {
 .form-control {
     padding-left: 45px;
     margin: 8px;
+    font: 11pt Roboto Lt;
 }
 
 .checkbox {
@@ -171,6 +172,7 @@ body {
     margin-bottom: 25px;
     margin-left: 10px;
     margin-right: -1px;
+    font: 14pt Roboto Lt;
 }
 
 #login-row {
@@ -182,6 +184,7 @@ body {
 }
 .checkbox{
     margin-left: -10px;
+    font: 9pt Roboto Lt;
 }
 .checkbox label{
     margin-right: 10px;
