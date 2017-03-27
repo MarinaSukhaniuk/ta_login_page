@@ -23,6 +23,10 @@ body {
     font-family: "Roboto M";
     src: url("../fonts/Roboto Medium.ttf")
 }
+@font-face {
+    font-family: "HelveticaNeueCyr Lt";
+    src: url("../fonts/HelveticaNeueCyr Light.otf");
+}
 .img-overlay {
 
     margin:0;
@@ -50,9 +54,7 @@ body {
     align-items: center;
     font: 11pt Roboto Lt;
 }
-.vertical-center a{
-    color: #76b6e9;
-}
+
 
 .vertical-center-margin {
     margin-top: 5px;
@@ -64,6 +66,19 @@ body {
     font: 16pt Roboto Lt;
     text-align: center;
 }
+.header-text-login{
+    margin-top: 35px;
+    font: 16pt Roboto Lt;
+    text-align: center;
+}
+.header2-text-login{
+    margin-top: 15px;
+    font: 10pt HelveticaNeueCyr Lt;
+    text-align: center;
+}
+a{
+    color: #76b6e9;
+}
 
 .image-icon {
     max-width: 65%;
@@ -74,6 +89,11 @@ body {
 
 .image-icon-mail {
     max-width: 70%;
+    height: auto;
+    width: auto;
+}
+.image-icon-password{
+    max-width: 50%;
     height: auto;
     width: auto;
 }
@@ -96,6 +116,9 @@ body {
 .checkbox-text{
     margin-left: 35px;
     margin-top: -20px;
+}
+.link-margin{
+    margin-left: 20px;
 }
 .btn-orange {
     background-color: #f26036;
