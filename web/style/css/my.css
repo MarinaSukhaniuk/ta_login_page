@@ -9,6 +9,11 @@ body {
     background-size: cover;
     height: 100%;
 }
+.body-accountant{
+    background: url("../images/accountant_background.jpg") no-repeat fixed center center;
+    background-color: rgba(156, 149, 133, 0.4) !important;
+    background-blend-mode: darken;
+}
 @font-face {
     font-family: "Roboto Lt";
     src: url("../fonts/Roboto Light.ttf");
@@ -47,6 +52,11 @@ body {
     font: 36pt Century Gothic;
     width: 100%;
     color: white;
+}
+.large-text-accountant{
+    font: 28pt Century Gothic;
+    width: 99%;
+    color: #76b6e9;
 }
 
 .vertical-center {
@@ -203,7 +213,8 @@ a{
 }
 
 #left-logo {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(253, 255, 242, 0.3);
+    background-blend-mode: lighten;
 }
 .checkbox{
     margin-left: -10px;
